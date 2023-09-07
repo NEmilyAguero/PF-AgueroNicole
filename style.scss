@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+$color_1: white;
+$color_2: #fff;
+$color_3: rgb(255, 255, 255);
+$font-family_1: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$background-color_1: rgb(255, 188, 212);
+$background-color_2: #ff9cc5;
+$background-color_3: rgb(255, 212, 230);
+$background-color_4: #fb9ed7;
+
+@keyframes marquee {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+body {
+	background-color: $background-color_1;
+	.scrolling-text {
+		p {
+			font-size: 26px;
+			font-family: $font-family_1;
+		}
+	}
+}
+body#razones {
+	marquee {
+		display: flex;
+		color: $color_3;
+		font-size: 30px;
+		display: block;
+		font-size: 20px;
+	}
+}
+   .menu {
+     list-style: none;
+	 padding: 0;
+	 background-color: $background-color_2;
+	 text-align: center;
+   li {
+	display: inline-block;
+	text-align: center;
+	  a {
+		text-decoration: none;
+		color: $color_1;
+		padding: 20px;
+		display: block;
+		text-align: center;
+		text-transform: uppercase;
+		.scrolling-text p { font-size: 20px;
+		padding: 0 10px;
+		}
+		&:hover {
+			background-color: $background-color_3;
+		}
+	}
+}
+.scrolling-text {
+	white-space: nowrap;
+	overflow: hidden;
+	color: $color_1;
+	p {
+		display: block;
+		animation: marquee 1s;
+	}
+}
+footer {
+	background-color: $background-color_4;
+	color: $color_2;
+	text-align: center;
+	padding: 20px;
+	font-size: 12px;
+}
+body#templo {
+	marquee {
+		color: $color_3;
+		font-size: 30px;
+		display: block;
+		font-size: 20px;
+	}
+}
+body#especie {
+	marquee {
+		color: $color_3;
+		font-size: 30px;
+		display: block;
+		font-size: 20px;
+	}
+	h1 {
+		marquee {
+			color: $color_1;
+		}
+	}
+}
+body#egipcios {
+	marquee {
+		color: $color_3;
+		font-size: 30px;
+		display: block;
+		font-size: 20px;
+	}
+}
+
+} 
+.scrolling-text p {
+	font-size: 20px;
+	padding: 0 10px;
+	}
+
+/* estilo para pantallas de pc*/
+@media screen and (min-width: 1024px) {
+	.menu {
+		max-width: 2000px;
+		margin: auto;
+	}
+}
+
+/* estilo para pantallas tipo tablet */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+	.menu {
+		display: none;
+		margin: auto;
+		li {
+			padding: 1em;
+		}
+	}
+	footer {
+		font-size: 14px;
+	}
+}
+
+/* estilo para pantalla movil */
+@media screen and (max-width: 768px) {
+	img {
+		margin-top: auto;
+		max-width: 100%;
+	}
+	.menu {
+		width: 100%;
+		max-width: 2000px;
+		margin: auto;
+		li {
+			display: block;
+		}
+	}
+}
