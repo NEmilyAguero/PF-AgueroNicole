@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosa pet shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" type="text/javascript"></script>
+        <!-- icon-->
+    <link rel="shortcut icon" href="../img/Captura de pantalla (8).jpg" />
+</head>
+<body>
+
+    <body>
+        <!-- menú-->
+        <header>
+    
+            <ul class="menu">
+              <li><a href="../index.html">Rosa pet shop</a></li>
+              <li><a href="#">Productos</a></li>
+             <li> <aside>
+                <button class="btn btn-outline-dark" type="submit">
+                    <i class="bi-cart-fill me-1"></i>
+                <h2>Carrito de Compras</h2>
+                <ul id="carrito-lista">
+                </ul>
+                <p>Total: $<span id="carrito-total">0.00</span></p>
+            </button>
+            </aside> </li>
+           </ul>
+
+
+    </header>
+   
+    
+    <main>
+        <section class="producto">
+            <img src="../img/gato catnip.jfif" alt="Producto 1">
+            <h2>Gato con catnip de peluche</h2>
+            <p>Precio: $2.000</p>
+            <button onclick="agregarAlCarrito(1)">Agregar al carrito</button>
+        </section>
+
+        <section class="producto">
+            <img src="../img/pelota inteligente.jfif" alt="Producto 2">
+            <h2>Juguete interactivo</h2>
+            <p>Precio: $3.000</p>
+            <button onclick="agregarAlCarrito(2)">Agregar al carrito</button>
+        </section>
+
+        <section class="producto">
+            <img src="../img/ratón.jfif" alt="Producto 3">
+            <h2>Ratón</h2>
+            <p>Precio: $1.000</p>
+            <button onclick="agregarAlCarrito(3)">Agregar al carrito</button>
+        </section>
+
+        <section class="producto">
+            <img src="../img/descarga.jfif" alt="Producto 4">
+            <h2>Zanahoria de juguete</h2>
+            <p>Precio: $3.000</p>
+            <button onclick="agregarAlCarrito(4)">Agregar al carrito</button>
+        </section>
+
+        <section class="producto">
+            <img src="../img/pescado.jfif" alt="Producto 5">
+            <h2>Pescado a pila</h2>
+            <p>Precio: $3.000</p>
+            <button onclick="agregarAlCarrito(4)">Agregar al carrito</button>
+        </section>
+
+        <section class="producto">
+            <img src="../img/platos de ceramica.jfif" alt="Producto 6">
+            <h2>Platos de ceramica con base de madera</h2>
+            <p>Precio: $4.000</p>
+            <button onclick="agregarAlCarrito(4)">Agregar al carrito</button>
+        </section>
+    </main>
+
+    <!-- footer-->
+    <footer>
+        <p> © Copyright 2023 - Rosa pet shop <p>
+    </footer>
+</body>
+</html>
+
