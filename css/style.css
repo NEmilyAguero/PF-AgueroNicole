@@ -1,3 +1,4 @@
+@import UTF-8;
 
 * {
     margin: 0;
@@ -13,7 +14,7 @@ body {
 }
 
 header {
-    background-color: #ff88c4;
+    background-color: #ffeaf3;
     color: white;
     text-align: center;
     padding: 20px;
@@ -52,7 +53,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff6ea0;
+    background-color: #ffa9c7;
 }
 
 
@@ -90,7 +91,7 @@ aside {
 .menu {
     list-style: none;
     padding: 0;
-    background-color: #ff9abe;
+    background-color: #ff9ec0;
     text-align: center;
   }
   
@@ -113,11 +114,34 @@ aside {
   }
 
   footer {
-    background-color: #ff81b4;
+    background-color: #ffa4c9;
     color: #fff;
     text-align: center;
     padding: 20px;
   }
+
+
+  .navbar-brand {
+    margin: 15px 0;
+    padding: 0;
+    text-decoration: none; 
+  }
+  
+  .navbar-brand span {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fffafa;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  h2{
+    text-align: center;
+    color: #ffa6ca;
+  }
+
 
 
 
